@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.neu.jianfu.filter.VerifyLogin</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	
+<servlet>
+    <servlet-name>code</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.code</servlet-class>
+</servlet>
+ <servlet-mapping>
+    <servlet-name>code</servlet-name>
+    <url-pattern>/code.do</url-pattern>
+ </servlet-mapping>
+ <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.Login</servlet-class>
+</servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>Adminadd</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.Adminadd</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>AdminshowAll</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.AdminshowAll</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>AdminDelete</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.AdminDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>UserShowAll</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.UserShowAll</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>Page</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.Page</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>UserPage</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.UserPage</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>UserAdd</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.UserAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>AdminShowJobs</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.AdminShowJobs</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>AdminUpdate</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.AdminUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <display-name>findById.do</display-name>
+    <servlet-name>Update</servlet-name>
+    <servlet-class>com.neu.jianfu.servlet.Update</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+ <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login.do</url-pattern>
+ </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Adminadd</servlet-name>
+    <url-pattern>/Adminadd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminshowAll</servlet-name>
+    <url-pattern>/AdminshowAll.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminDelete</servlet-name>
+    <url-pattern>/AdminDelete.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserShowAll</servlet-name>
+    <url-pattern>/UserShowAll.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Page</servlet-name>
+    <url-pattern>/Page.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserPage</servlet-name>
+    <url-pattern>/UserPage.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserAdd</servlet-name>
+    <url-pattern>/UserAdd.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminShowJobs</servlet-name>
+    <url-pattern>/AdminShowJobs.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AdminUpdate</servlet-name>
+    <url-pattern>/AdminUpdate.do</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Update</servlet-name>
+    <url-pattern>/Update.do</url-pattern>
+  </servlet-mapping>
+ 
+ 
+</web-app>
